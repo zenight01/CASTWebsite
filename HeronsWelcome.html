@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAST Productions</title>
+    <link rel="stylesheet" href="Fixed_NavBar.css" />
+    <link rel="stylesheet" href="Sold_Out_Tix.css">
+    <style>
+      body {
+        padding-top: 70px;
+      }
+      header {
+        background-color: #5c0409;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <nav class="NavBar">
+        <div class="LeftSide">
+          <img
+            class="Logo"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/University_of_Makati_logo.png/175px-University_of_Makati_logo.png"
+            alt="University of Makati Logo"
+          />
+          <img
+            class="Logo"
+            src="https://www.umak.edu.ph/wp-content/uploads/2022/08/umak-cca-cast-300x300.png"
+            alt="CAST Logo"
+          />
+          <a href="Home.html" class="NavBrand">
+            <span class="FullText"
+              >Collective Arts of Students and Thespians</span
+            >
+            <span class="ShortText">C.A.S.T.</span>
+          </a>
+        </div>
+        <ul class="NavMenu">
+          <li class="NavItem">
+            <a href="index.html" class="NavLink">About</a>
+          </li>
+          <li class="NavItem">
+            <a href="Actors.html" class="NavLink">Actors</a>
+          </li>
+          <li class="NavItem">
+            <a href="MainShows.html" class="NavLink">Shows & Tickets</a>
+          </li>
+          <li class="NavItem">
+            <a href="News.html" class="NavLink">News</a>
+          </li>
+          <li class="NavItem">
+            <a href="Gallery.html" class="NavLink">Gallery</a>
+          </li>
+          <li class="NavItem">
+            <a href="Contact_Us.html" class="NavLink">Contact Us</a>
+          </li>
+        </ul>
+        <div class="Hamburger">
+          <span class="Bar"></span>
+          <span class="Bar"></span>
+          <span class="Bar"></span>
+        </div>
+      </nav>
+    </header>
+    <body>
+    <div class="Tickets">
+      <img class="Banner" src="Pictures_Source/NewsPicture.png">
+          <div class="Disclaimer"> Romeo and Juliet tickets full house! 
+          </div>
+
+    </div>        
+    <div class="TEXTS">
+      <p class="Text"> ROMEO AND JULIET ON DA HAUS!!!
+
+        Here @UMak Oval "Heron's Welcome", waiting na ang mga R@J official merchandise photocards at stickers.
+        Ano pang hinihintay niyo? Tara na mga ka-veronizens!
+        
+        #rajfever
+        #rajatheronswelcome
+        #rajcomeback2024 </p>
+    </div>
+          
+    
+    <footer>
+    <div class="Footer">
+          <div class="FooterContent">
+            <img
+              class="FooterLogo"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/University_of_Makati_logo.png/175px-University_of_Makati_logo.png"
+              alt="University Logo"
+            />
+            <img
+              class="FooterLogo"
+              src="https://www.umak.edu.ph/wp-content/uploads/2022/08/umak-cca-cast-300x300.png"
+              alt="CAST Logo"
+            />
+            <div class="FooterText">
+              <h3>University of Makati's</h3>
+              <h2>Collective Arts of Students and Thespians</h2>
+            </div>
+          </div>
+          <hr />
+          <p class="FooterAddress">
+            Dr Jose P. Rizal Ext, West Rembo, Taguig, 1644 Metro Manila
+          </p>
+          <button class="FooterButton">
+            <a href="https://www.facebook.com/CASTUMakProductions"
+              >Visit our FB Page!</a
+            >
+          </button>
+        </div>
+        <div class="BottomFooter">
+          <p>
+            Copyright @ 2024. The Collective Arts of Students and Thespians. | All
+            rights reserved | University of Makati Organization
+          </p>
+        </div>
+      </footer>
+    <script>
+      const hamburger = document.querySelector(".Hamburger");
+      const navMenu = document.querySelector(".NavMenu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAST Productions</title>
+    <link rel="stylesheet" href="Fixed_NavBar.css" />
+    <link rel="stylesheet" href="KATI2017CSS.css" />
+    <style>
+      body {
+        padding-top: 70px;
+      }
+      header {
+        background-color: #5c0409;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="NavBar">
+        <div class="LeftSide">
+          <img
+            class="Logo"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/University_of_Makati_logo.png/175px-University_of_Makati_logo.png"
+            alt="University of Makati Logo"
+          />
+          <img
+            class="Logo"
+            src="https://www.umak.edu.ph/wp-content/uploads/2022/08/umak-cca-cast-300x300.png"
+            alt="CAST Logo"
+          />
+          <a href="Home.html" class="NavBrand">
+            <span class="FullText"
+              >Collective Arts of Students and Thespians</span
+            >
+            <span class="ShortText">C.A.S.T.</span>
+          </a>
+        </div>
+        <ul class="NavMenu">
+          <li class="NavItem">
+            <a href="index.html" class="NavLink">About</a>
+          </li>
+          <li class="NavItem">
+            <a href="Actors.html" class="NavLink">Actors</a>
+          </li>
+          <li class="NavItem">
+            <a href="MainShows.html" class="NavLink">Shows & Tickets</a>
+          </li>
+          <li class="NavItem">
+            <a href="News.html" class="NavLink">News</a>
+          </li>
+          <li class="NavItem">
+            <a href="Gallery.html" class="NavLink">Gallery</a>
+          </li>
+          <li class="NavItem">
+            <a href="Contact_Us.html" class="NavLink">Contact Us</a>
+          </li>
+        </ul>
+        <div class="Hamburger">
+          <span class="Bar"></span>
+          <span class="Bar"></span>
+          <span class="Bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="Section1">
+      <div class="Titles">
+        <h1 class="title1">KATI 2017</h1>
+      </div>
+    </section>
+
+    <div class="line">
+      <hr />
+    </div>
+
+    <section class="Section2">
+      <div class="content">
+        <p class="Paragraph1">
+          Mga kabalangay na taga-KATI, hindi mo pa ba napapanuod ang isang
+          alamat na mamarka sa ating kabihasnan?
+        </p>
+        <p class="Paragraph2">
+          Ano pang hinihintay mo, ikaw ay aming inaanyayahan sa aming
+          pagtatanghal ngayong Agosto 14, 2017 - 6pm sa Grand Theater, ito ay
+          LIBRENG PANOOD para sa aming mga kabalangay sa UNIVERSITY OF MAKATI
+        </p>
+        <p class="Paragraph3">
+          Magpalista sa aming booth sa labas ng Grand theater para ikaw ay
+          mapabilang at masaksihan ang isang obra ng panahon ang "KATI: Ang
+          Pinagmulan ng Alamat.
+        </p>
+
+        <a href="" class="LinkButton">Closed</a>
+      </div>
+    </section>
+    <footer>
+      <div class="Footer">
+        <div class="FooterContent">
+          <div class="LeftFooter">
+            <div class="LogoContainer">
+              <img
+                class="FooterLogo"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/University_of_Makati_logo.png/175px-University_of_Makati_logo.png"
+                alt="University Logo"
+              />
+              <img
+                class="FooterLogo"
+                src="https://www.umak.edu.ph/wp-content/uploads/2022/08/umak-cca-cast-300x300.png"
+                alt="CAST Logo"
+              />
+            </div>
+            <h3>University of Makati's</h3>
+            <h2>Collective Arts of Students and Thespians</h2>
+          </div>
+          <div class="CenterFooter">
+            <h3>ADDRESS</h3>
+            <p>Dr Jose P. Rizal Ext, West Rembo, Taguig, 1644 Metro Manila</p>
+          </div>
+          <div class="RightFooter">
+            <h3>FOLLOW US</h3>
+            <p>
+              <a href="https://www.facebook.com/CASTUMakProductions"
+                >Facebook</a
+              >
+            </p>
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+            <p><a href="https://www.spotify.com/">Spotify</a></p>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="BottomFooter">
+        <p>
+          Copyright @ 2024. The Collective Arts of Students and Thespians. | All
+          rights reserved | University of Makati Organization
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".Hamburger");
+      const navMenu = document.querySelector(".NavMenu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

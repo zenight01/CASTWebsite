@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAST Productions</title>
+    <link rel="stylesheet" href="Fixed_NavBar.css" />
+    <link rel="stylesheet" href="Contact_Us.css" />
+    <style>
+      body {
+        padding-top: 70px;
+      }
+      header {
+        background-color: #5c0409;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="NavBar">
+        <div class="LeftSide">
+          <img
+            class="Logo"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/University_of_Makati_logo.png/175px-University_of_Makati_logo.png"
+            alt="University of Makati Logo"
+          />
+          <img
+            class="Logo"
+            src="https://www.umak.edu.ph/wp-content/uploads/2022/08/umak-cca-cast-300x300.png"
+            alt="CAST Logo"
+          />
+          <a href="Home.html" class="NavBrand">
+            <span class="FullText"
+              >Collective Arts of Students and Thespians</span
+            >
+            <span class="ShortText">C.A.S.T.</span>
+          </a>
+        </div>
+        <ul class="NavMenu">
+          <li class="NavItem">
+            <a href="index.html" class="NavLink">About</a>
+          </li>
+          <li class="NavItem">
+            <a href="Actors.html" class="NavLink">Actors</a>
+          </li>
+          <li class="NavItem">
+            <a href="MainShows.html" class="NavLink">Shows & Tickets</a>
+          </li>
+          <li class="NavItem">
+            <a href="News.html" class="NavLink">News</a>
+          </li>
+          <li class="NavItem">
+            <a href="Gallery.html" class="NavLink">Gallery</a>
+          </li>
+          <li class="NavItem">
+            <a href="Contact_Us.html" class="NavLink">Contact Us</a>
+          </li>
+        </ul>
+        <div class="Hamburger">
+          <span class="Bar"></span>
+          <span class="Bar"></span>
+          <span class="Bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="ContactUsShowcase">
+      <h1>Contact Us</h1>
+    </div>
+
+    <h2>Get in touch with CAST Productions!</h2>
+    <div class="ContactCardsList">
+      <div class="ContactCard">
+        <img
+          src="https://img.icons8.com/ios-filled/50/ffffff/email.png"
+          alt="Email Icon"
+        />
+        <p><b>Email Us</b></p>
+        <p>cca@umak.edu.ph</p>
+      </div>
+
+      <div class="ContactCard">
+        <img
+          src="https://img.icons8.com/ios-filled/50/ffffff/map-marker.png"
+          alt="AddressIcon"
+        />
+        <p><b>School Address</b></p>
+        <p>Dr. Jose P. Rizal Ext</p>
+        <p>West Rembo, Metro Manila</p>
+      </div>
+
+      <div class="ContactCard">
+        <img
+          src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png"
+          alt="Facebook Icon"
+        />
+        <img
+          src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+          alt="Instagram Icon"
+        />
+        <p><b>Social Medias</b></p>
+        <a href="https://www.facebook.com/CASTUMakProductions/">Facebook</a>
+        <p></p>
+        <a href="https://www.instagram.com/castumakofficial/">Instagram</a>
+      </div>
+    </div>
+
+    <div class="map">
+      <img src="Pictures_Source/UniversityOfMakatiMap.png" />
+    </div>
+
+    <footer>
+      <div class="Bottom_Footer">
+        <p class="Footer_Text">
+          Copyright &copy; 2024. The Collective Arts of Students and Thespians.
+          | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".Hamburger");
+      const navMenu = document.querySelector(".NavMenu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

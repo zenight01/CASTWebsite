@@ -1,0 +1,598 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.scroller {
+  background-image: url(https://i.pinimg.com/474x/49/98/92/499892196f94396f0f4ced4c07c65dcf.jpg);
+  max-width: 2000px;
+  place-content: center;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    White 20%,
+    White 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, White 20%, White 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.scroller[data-animated="true"] .scroller__inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.Slide {
+  height: 295px;
+  width: 210px;
+  display: flex;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.Photo {
+  width: 100%;
+  transition: 0.15s;
+  opacity: 0.7;
+}
+
+.Photo:hover,
+.Photo::after,
+.Photo::before {
+  animation-play-state: paused;
+  transform: translateZ(20px);
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #ffeb01;
+  z-index: -1;
+  padding: 3px;
+  opacity: 1;
+}
+
+.Photo::before {
+  filter: blur(40px);
+}
+
+hr.new1 {
+  border: 1px solid #ffcc47;
+}
+
+.ACTORS {
+  background: #5c0409;
+  margin-bottom: 100px;
+}
+
+.Current_Actors {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5f5f5;
+  font-weight: bold;
+  margin: 0px 0px 0px 85px;
+  text-size-adjust: 20;
+}
+
+.year {
+  padding-top: 100px;
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 2rem;
+}
+
+.FullText {
+  visibility: visible;
+}
+
+.ShortText {
+  visibility: hidden;
+}
+
+.search_bar {
+  background-color: #ffcc47;
+  width: 319px;
+  height: 34px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 0px;
+  margin-left: 500px;
+  text-align: center;
+  padding-top: 3px;
+  transition: opacity 0.15s;
+  display: inline-block;
+}
+
+.search_bar:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.Actors_img {
+  margin-left: 0px;
+  display: inline-block;
+}
+
+.Actors_Picture {
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  width: 180px;
+  height: 250px;
+  border-radius: 164px;
+  display: grid;
+  place-items: center;
+}
+
+.Name,
+.Quote {
+  text-align: center;
+  font-size: 20px;
+  height: auto;
+  width: 230px;
+}
+
+.Alumni {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5f5f5;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 84px;
+  margin-top: 50px;
+}
+
+.Batch {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.Alumni_img {
+  margin-left: 0px;
+  display: inline-block;
+}
+
+.Alumni_Picture {
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  width: 180px;
+  height: 250px;
+  border-radius: 164px;
+  display: grid;
+  place-content: center;
+  vertical-align: bottom;
+}
+
+/* MEDIA CSS */
+
+@media (max-width: 1252px) {
+  .search_bar {
+    background-color: #ffcc47;
+    width: 319px;
+    height: 34px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 0px;
+    margin-left: 409px;
+    text-align: center;
+    transition: opacity 0.15s;
+    display: inline;
+  }
+
+  .Actors_img {
+    margin-left: 0%;
+    display: inline-block;
+  }
+
+  .Actors_Picture {
+    margin: 50px 45px 10px 45px;
+    width: 180px;
+    height: 250px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Alumni_img {
+    margin-left: 0%;
+    display: inline-block;
+  }
+
+  .Alumni_Picture {
+    margin: 50px 45px 10px 45px;
+    width: 180px;
+    height: 250px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .FullText {
+    visibility: hidden;
+  }
+
+  .ShortText {
+    visibility: visible;
+  }
+
+  .search_bar {
+    background-color: #ffcc47;
+    width: 319px;
+    height: 34px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 0px;
+    margin-left: 475px;
+    text-align: center;
+    transition: opacity 0.15s;
+    display: inline;
+  }
+
+  .Actors_Picture {
+    margin: 50px 50px 10px 50px;
+    width: 240px;
+    height: 310px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Actors_img {
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .Alumni_Picture {
+    margin: 50px 50px 10px 50px;
+    width: 240px;
+    height: 310px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Alumni_img {
+    margin-left: 0px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1113px) {
+  .FullText {
+    visibility: hidden;
+  }
+
+  .ShortText {
+    visibility: visible;
+  }
+
+  .search_bar {
+    background-color: #ffcc47;
+    width: 319px;
+    height: 34px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 0px;
+    margin-left: 395px;
+    text-align: center;
+    transition: opacity 0.15s;
+    display: inline;
+  }
+
+  .Actors_img {
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .Actors_Picture {
+    margin: 50px 50px 10px 50px;
+    width: 210px;
+    height: 280px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Name,
+  .Quote {
+    text-align: center;
+    font-size: 20px;
+    height: auto;
+    width: 230px;
+    margin-left: 1.5rem;
+  }
+
+  .Alumni_img {
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .Alumni_Picture {
+    margin: 50px 50px 10px 50px;
+    width: 210px;
+    height: 280px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .FullText {
+    visibility: hidden;
+  }
+
+  .ShortText {
+    visibility: visible;
+  }
+
+  .search_bar {
+    background-color: #ffcc47;
+    width: 319px;
+    height: 34px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 0px;
+    margin-left: 300px;
+    text-align: center;
+    transition: opacity 0.15s;
+    display: inline;
+  }
+
+  .Actors_img {
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .Actors_Picture {
+    margin: 50px 50px 10px 50px;
+    width: 180px;
+    height: 250px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Name,
+  .Quote {
+    text-align: center;
+    font-size: 20px;
+    height: auto;
+    width: 230px;
+    margin-left: 1rem;
+  }
+
+  .Alumni_img {
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .Alumni_Picture {
+    margin: 50px 50px 10px 50px;
+    width: 180px;
+    height: 250px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 933px) {
+  .FullText {
+    visibility: hidden;
+  }
+
+  .ShortText {
+    visibility: visible;
+  }
+
+  .Current_Actors {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f5f5;
+    font-weight: bold;
+    margin: 0px 0px 0px 30px;
+    text-size-adjust: 20;
+  }
+
+  .Alumni {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 50px 0px 0px 30px;
+  }
+
+  .search_bar {
+    background-color: #ffcc47;
+    width: 319px;
+    height: 34px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 0px;
+    margin-left: 210px;
+    text-align: center;
+    transition: opacity 0.15s;
+    display: inline;
+  }
+
+  .Actors_Picture {
+    margin: 50px 30px 10px 30px;
+    width: 180px;
+    height: 250px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Actors_img {
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .Alumni_Picture {
+    margin: 50px 30px 10px 30px;
+    width: 180px;
+    height: 250px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Alumni_img {
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .Name,
+  .Quote {
+    text-align: center;
+    font-size: 20px;
+    height: auto;
+    width: 230px;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 785px) {
+  .FullText {
+    visibility: hidden;
+  }
+
+  .ShortText {
+    visibility: visible;
+  }
+
+  .search_bar {
+    background-color: #ffcc47;
+    width: 319px;
+    height: 34px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 0px;
+    margin-left: 100px;
+    text-align: center;
+    transition: opacity 0.15s;
+    display: inline;
+  }
+
+  .Actors_Picture {
+    margin: 50px 15px 10px 15px;
+    width: 150px;
+    height: 210px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Actors_img {
+    width: 13rem;
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .Alumni_Picture {
+    margin: 50px 0px 10px 30px;
+    width: 150px;
+    height: 210px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Alumni_img {
+    width: 13rem;
+    display: inline-block;
+  }
+
+  .Name,
+  .Quote {
+    text-align: center;
+    font-size: 20px;
+    height: auto;
+    width: 230px;
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 670px) {
+  .FullText {
+    visibility: hidden;
+  }
+
+  .ShortText {
+    visibility: visible;
+  }
+
+  .search_bar {
+    background-color: #ffcc47;
+    width: 209px;
+    height: 34px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 0px;
+    margin-left: 100px;
+    text-align: center;
+    transition: opacity 0.15s;
+    display: inline;
+  }
+
+  .Actors_Picture {
+    margin: 50px 15px 10px 15px;
+    width: 150px;
+    height: 210px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Actors_img {
+    width: 10rem;
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .Alumni_Picture {
+    margin: 50px 15px 10px 13px;
+    width: 150px;
+    height: 210px;
+    border-radius: 145px;
+    display: grid;
+    place-items: center;
+  }
+
+  .Alumni_img {
+    width: 10rem;
+    display: inline-block;
+  }
+
+  .Name,
+  .Quote {
+    text-align: center;
+    font-size: 20px;
+    height: auto;
+    width: 230px;
+    margin-left: -20px;
+  }
+}

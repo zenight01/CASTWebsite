@@ -1,0 +1,57 @@
+* {
+  font-family: "Afacad";
+}
+
+@font-face {
+  font-family: "Afacad";
+  src: url("fonts/subset-Afacad-Regular.woff2") format("woff2"),
+    url("fonts/subset-Afacad-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Afacad";
+  src: url("fonts/subset-Afacad-Bold.woff2") format("woff2"),
+    url("fonts/subset-Afacad-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Afacad";
+  src: url("fonts/subset-Afacad-Italic.woff2") format("woff2"),
+    url("fonts/subset-Afacad-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Afacad";
+  src: url("fonts/subset-Afacad-Medium.woff2") format("woff2"),
+    url("fonts/subset-Afacad-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Afacad";
+  src: url("fonts/subset-Afacad-SemiBold.woff2") format("woff2"),
+    url("fonts/subset-Afacad-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Agbalumo";
+  src: url("fonts/Agbalumo-Regular.woff2") format("woff2"),
+    url("fonts/Agbalumo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
